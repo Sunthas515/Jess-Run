@@ -3,12 +3,12 @@ import { useState } from 'react';
 import { Input } from 'reactstrap';
 
 export default function Home() {
-    const [input, setInput] = useState('');
+    const [names, setInput] = useState('');
     return (
-      <div className="App">
+      <div className="Home">
         <h1>CYA Cancer Baton</h1>
-        <input type="text" name="runnerNames" value={input} onInput={e => setInput(e.target.value)}/>
-        <h2>{input}</h2>
+        <Input type="text" name="runnerNames" value={names} onInput={e => setInput(e.target.value)}/>
+        <h2>{names}</h2>
       </div>
     );
 }
