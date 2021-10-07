@@ -1,6 +1,5 @@
 import './App.css';
 import { useState } from 'react';
-import { Input } from 'reactstrap'
 
 function App() {
   const [input, setInput] = useState('');
