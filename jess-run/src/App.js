@@ -1,15 +1,16 @@
 import './App.css';
-import { useState } from 'react';
+import { BrowserRouter as Router } from "react-router-dom";
+
+import Home from "./home";
 
 function App() {
-  const [input, setInput] = useState('');
   return (
     <div className="App">
-      <h1>CYA Cancer Baton</h1>
-      <input type="text" name="runnerNames" value={input} onInput={e => setInput(e.target.value)}/>
-      <h2>{input}</h2>
+      <Router>
+        <Home />
+      </Router>
     </div>
-  );
+  )
 }
 
 export default App;
